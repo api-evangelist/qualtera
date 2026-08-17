@@ -42,6 +42,19 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Qualtera is a company surfaced as a portfolio company of serena and added to the API Evangelist network as a stub for enrichment. Sector: ai-data. This profile is a lead awaiting the enrichment pipeline.
+Qualtera was a French software company (founded 2010, backed by Serena) that built high-volume big
+data analytics platforms for semiconductor test and manufacturing — real-time observability,
+traceability and production control over test and assembly data for IDMs, foundries and OSATs,
+including the SiliconDash decision-support product. **Synopsys acquired Qualtera on June 10, 2020**
+and folded its analytics into Yield Explorer and TestMAX, now part of Synopsys Silicon Lifecycle
+Management.
 
-Source: portfolio company of [serena](https://github.com/api-evangelist/serena) — https://www.qualtera.com/
+There is no Qualtera API surface left to profile. `qualtera.com` is delegated to Synopsys
+nameservers and 301-redirects every path — including `/.well-known/agent-card.json`,
+`/openapi.json` and `/llms.txt` — to
+<https://www.synopsys.com/solutions/silicon-lifecycle-management.html>, and `https://qualtera.com`
+fails the TLS handshake outright. No package exists on npm, PyPI, RubyGems or crates.io under this
+name. This profile is retained as a historical record (`x-coverage: none / defunct`); any live
+analytics API belongs to Synopsys and is profiled there.
+
+Source: portfolio company of [serena](https://github.com/api-evangelist/serena) — https://www.serena.vc/portfolio-profile/qualtera/

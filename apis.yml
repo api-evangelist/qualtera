@@ -1,18 +1,48 @@
 aid: qualtera
 name: Qualtera
-description: 'Qualtera is a company surfaced as a portfolio company of serena and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai-data. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Qualtera was a French software company, founded in 2010 and backed by Serena, that
+  built high-volume big data analytics platforms for semiconductor test and manufacturing — giving
+  IDMs, foundries and OSATs real-time observability, traceability and production control over test
+  and assembly data across worldwide operations, processing the data of tens of millions of wafers
+  and billions of parts a year. Its products included SiliconDash, an automated decision-support
+  system for test, quality and yield analysis. Synopsys acquired Qualtera on June 10, 2020 and
+  folded its analytics into Yield Explorer and TestMAX, which now ship as part of the Synopsys
+  Silicon Lifecycle Management family. The Qualtera brand and any surface it once had are gone:
+  qualtera.com now resolves to Synopsys nameservers and 301-redirects every path to the Synopsys
+  Silicon Lifecycle Management marketing page, and the host refuses a TLS handshake on port 443
+  entirely. Qualtera never published a public developer portal, API reference, OpenAPI definition,
+  SDK or package on any registry, and no machine-readable contract survives under its own name.
+  This profile is retained as a historical record; the live analytics API surface, where one exists,
+  belongs to Synopsys and is profiled there rather than credited here.'
 url: https://raw.githubusercontent.com/api-evangelist/qualtera/refs/heads/main/apis.yml
 x-type: company
+x-status: defunct
+x-defunct-date: '2020-06'
+x-acquired-by: synopsys
+x-acquired-date: '2020-06-10'
 x-source: serena-portfolio
+x-backed-by:
+- serena
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-domain-note: qualtera.com is no longer operated as a Qualtera property — it is delegated to
+  exdns1-4.synopsys.com and 301-redirects every requested path (including /.well-known/*,
+  /openapi.json and /llms.txt) to https://www.synopsys.com/solutions/silicon-lifecycle-management.html,
+  while https://qualtera.com fails the TLS handshake outright (alert 40). No Website pointer is
+  wired to it, because the domain now answers for the acquirer rather than for this company.
 specificationVersion: '0.20'
 created: '2026-08-17'
 modified: '2026-08-17'
 tags:
 - Company
-- Ai Data
+- Defunct
+- Acquired
+- Semiconductor
+- Manufacturing Analytics
+- Test Data
+- Yield Management
+- Big Data
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,5 +50,41 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
-  url: https://www.qualtera.com/
+- type: Acquirer
+  name: Synopsys acquired Qualtera on 2020-06-10
+  url: https://www.synopsys.com/
+- type: ParentCompany
+  name: Synopsys Silicon Lifecycle Management (where the Qualtera analytics now ship)
+  url: https://www.synopsys.com/solutions/silicon-lifecycle-management.html
+- type: News
+  name: Synopsys Acquires Semiconductor Analytics Innovator Qualtera (2020-06-10)
+  url: https://news.synopsys.com/2020-06-10-Synopsys-Acquires-Semiconductor-Analytics-Innovator-Qualtera
+- type: Investors
+  name: Serena portfolio profile
+  url: https://www.serena.vc/portfolio-profile/qualtera/
+x-coverage:
+  state: none
+  reason: defunct
+  detail: Qualtera was absorbed into Synopsys in June 2020; qualtera.com is now delegated to
+    Synopsys nameservers and 301-redirects every path — including /.well-known/agent-card.json,
+    /openapi.json and /llms.txt — to the Synopsys Silicon Lifecycle Management page, while
+    https://qualtera.com refuses the TLS handshake, so no Qualtera-owned surface remains to read.
+  evidence:
+  - url: http://www.qualtera.com/
+    status: 301
+  - url: https://qualtera.com/
+    status: 0
+  - url: http://qualtera.com/openapi.json
+    status: 301
+  - url: http://qualtera.com/.well-known/agent-card.json
+    status: 301
+  - url: https://registry.npmjs.org/-/v1/search?text=qualtera
+    status: 200
+  - url: https://pypi.org/pypi/qualtera/json
+    status: 404
+  checked: '2026-08-17'
+x-enrichment:
+  date: '2026-08-17'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
