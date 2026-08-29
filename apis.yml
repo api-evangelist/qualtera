@@ -30,6 +30,17 @@ x-domain-note: qualtera.com is no longer operated as a Qualtera property — it 
   /openapi.json and /llms.txt) to https://www.synopsys.com/solutions/silicon-lifecycle-management.html,
   while https://qualtera.com fails the TLS handshake outright (alert 40). No Website pointer is
   wired to it, because the domain now answers for the acquirer rather than for this company.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 specificationVersion: '0.23'
 created: '2026-08-17'
 modified: '2026-08-17'
