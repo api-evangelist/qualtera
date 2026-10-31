@@ -64,19 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Qualtera was a French software company (founded 2010, backed by Serena) that built high-volume big
-data analytics platforms for semiconductor test and manufacturing — real-time observability,
-traceability and production control over test and assembly data for IDMs, foundries and OSATs,
-including the SiliconDash decision-support product. **Synopsys acquired Qualtera on June 10, 2020**
-and folded its analytics into Yield Explorer and TestMAX, now part of Synopsys Silicon Lifecycle
-Management.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-There is no Qualtera API surface left to profile. `qualtera.com` is delegated to Synopsys
-nameservers and 301-redirects every path — including `/.well-known/agent-card.json`,
-`/openapi.json` and `/llms.txt` — to
-<https://www.synopsys.com/solutions/silicon-lifecycle-management.html>, and `https://qualtera.com`
-fails the TLS handshake outright. No package exists on npm, PyPI, RubyGems or crates.io under this
-name. This profile is retained as a historical record (`x-coverage: none / defunct`); any live
-analytics API belongs to Synopsys and is profiled there.
+Qualtera was a French software company, founded in 2010 and backed by Serena, that built high-volume big data analytics platforms for semiconductor test and manufacturing — giving IDMs, foundries and OSATs real-time observability, traceability and production control over test and assembly data across worldwide operations, processing the data of tens of millions of wafers and billions of parts a year. Its products included SiliconDash, an automated decision-support system for test, quality and yield analysis. Synopsys acquired Qualtera on June 10, 2020 and folded its analytics into Yield Explorer and TestMAX, which now ship as part of the Synopsys Silicon Lifecycle Management family. The Qualtera brand and any surface it once had are gone: qualtera.com now resolves to Synopsys nameservers and 301-redirects every path to the Synopsys Silicon Lifecycle Management marketing page, and the host refuses a TLS handshake on port 443 entirely. Qualtera never published a public developer portal, API reference, OpenAPI definition, SDK or package on any registry, and no machine-readable contract survives under its own name. This profile is retained as a historical record; the live analytics API surface, where one exists, belongs to Synopsys and is profiled there rather than credited here.
 
-Source: portfolio company of [serena](https://github.com/api-evangelist/serena) — https://www.serena.vc/portfolio-profile/qualtera/
+**Areas:** Company · Defunct · Acquired · Semiconductors · Manufacturing Analytics · Test Data · Yield Management · Big Data · France
+
+## Qualtera on APIs.io (historical record)
+
+Everything profiled for Qualtera is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/qualtera/](https://apis.io/providers/qualtera/)** — or go straight to one of the APIs or properties below.
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Qualtera: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/qualtera/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
